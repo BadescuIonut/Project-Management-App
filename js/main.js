@@ -10,9 +10,8 @@ function checkUserLogin() {
     }
 }
 
-
 const empFromLocalStorage = localStorage.getItem('employeesArr');
-let employeesArr = JSON.parse(empFromLocalStorage);
+let employeesArr =empFromLocalStorage ? JSON.parse(empFromLocalStorage) : [];
 
 
 
